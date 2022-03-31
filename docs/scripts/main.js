@@ -53,6 +53,7 @@ function initializeTableData() {
       delimiter: ',',
       download: true,
       header: true,
+      skipEmptyLines: true,
       error: function(x, y) {
         console.log('error', x, y);
       },
