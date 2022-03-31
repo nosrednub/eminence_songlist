@@ -60,6 +60,7 @@ function initializeTableData() {
         var gridDiv = document.querySelector('#myGrid');
           var songList = [];
           songList = data.data;
+          document.getElementById("itemsTotal").innerHtml = songList.length;
           gridOptions.rowData = songList;
 
           // initialize autocomplete on searchbox
