@@ -4,8 +4,7 @@ var csvFilePath = "./data/Eminence-Sample-File-03312022.csv";
 // add column header info here if new column is added to the csv file.
 var columnDefs = [
   { field: "Title" },
-  { field: "Artist" },
-  { field: "Album" }
+  { field: "Artist" }
 ];
 
 // this is added to below after getting the data as well... make changes carefully
@@ -39,7 +38,6 @@ function getAutoCompleteValues(songList) {
     var rowData = songList[i];
     autoCompleteValues.push(rowData["Title"]);
     autoCompleteValues.push(rowData["Artist"]);
-    autoCompleteValues.push(rowData["Album"])
   }
 
   return autoCompleteValues;
