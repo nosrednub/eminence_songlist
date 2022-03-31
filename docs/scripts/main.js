@@ -3,7 +3,7 @@ var csvFilePath = "./data/Eminence-Sample-File-03312022.csv";
 
 // add column header info here if new column is added to the csv file.
 var columnDefs = [
-  { field: "Title" },
+  { field: "Title", headerName: "Song Title" },
   { field: "Artist" }
 ];
 
@@ -30,19 +30,6 @@ function filterTableData() {
     );
 }
 
-function getAutoCompleteValues(songList) {
-
-  var autoCompleteValues = [];
-
-  for (i = 0; i < songList.length; i++) {
-    var rowData = songList[i];
-    autoCompleteValues.push(rowData["Title"]);
-    autoCompleteValues.push(rowData["Artist"]);
-  }
-
-  return autoCompleteValues;
-}
-
 // setup the grid after the page has finished loading
 function initializeTableData() {
 
@@ -58,15 +45,11 @@ function initializeTableData() {
         console.log('error', x, y);
       },
       complete: function(data) {
-        var gridDiv = document.querySelector('#myGrid');
+        var gridDiv = document.querySelector('#tableGrid');
           var songList = [];
           songList = data.data;
-          document.getElementById("itemsTotal").innerHTML = songList.length;
+          // document.getElementById("itemsTotal").innerHTML = songList.length + " Results";
           gridOptions.rowData = songList;
-
-          // initialize autocomplete on searchbox
-          // not currently using.  has an issue after selecting suggestion...
-          // autocomplete(document.getElementById("myInput"), getAutoCompleteValues(songList));
 
           // https://www.ag-grid.com/
           // AG-Grid is the table library we are using to display and sort data.
