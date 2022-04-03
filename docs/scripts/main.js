@@ -13,7 +13,7 @@ var gridOptions =  {
   defaultColDef: {
     resizable: true,
     sortable: true,
-    filter: false
+    filter: true
   },
   columnDefs: columnDefs,
   onColumnResized: (params) => {
