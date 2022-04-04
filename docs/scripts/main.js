@@ -11,7 +11,9 @@ var columnDefs = [
 // some defaults for the gridOptions
 var gridOptions =  {
   defaultColDef: {
-    sortable: true
+    sortable: true,
+    wrapText: true,
+    autoHeight: true
   },
   columnDefs: columnDefs,
   onColumnResized: (params) => {
@@ -74,4 +76,13 @@ function autoSizeAll(gridOptions, skipHeader) {
   });
 
   gridOptions.columnApi.autoSizeColumns(allColumnIds, skipHeader);
+}
+
+function toggleMenuOpen() {
+  var menuUl = document.getElementById("menuList");
+  var menuOpen = menuUl.classList.contains("open");
+
+  if (menuOpen) menuUl.classList.remove("open");
+  else menuUl.classList.add("open");
+
 }
