@@ -11,9 +11,7 @@ var columnDefs = [
 // some defaults for the gridOptions
 var gridOptions =  {
   defaultColDef: {
-    resizable: true,
-    sortable: true,
-    filter: true
+    sortable: true
   },
   columnDefs: columnDefs,
   onColumnResized: (params) => {
