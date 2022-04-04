@@ -26,6 +26,7 @@ body {overflow: hidden;}
 
 /* overrides for table styles */
 .ag-theme-alpine .ag-row { font-size: 16px; }
+.ag-theme-alpine .ag-cell-wrap-text { word-break: initial; }
 
 /* content for other pages */
 .content {
