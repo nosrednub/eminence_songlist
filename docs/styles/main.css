@@ -4,7 +4,7 @@ body {overflow: hidden;}
 .pageWrap { height: 100%; width: 100%; background: url(../images/background.jpg) no-repeat center center; background-size: cover; }
 
 /* table specific styles */
-.table { height: 100%; opacity: .9; }
+.table { height: 100%; opacity: 1; }
 .tableWrapper { height: 100%; }
 
 .tableHeader { 
