@@ -22,7 +22,7 @@ body {overflow: hidden;}
   font-style: italic;
 }
 .results { padding: 10px; font-size: 12px; }
-#tableGrid {height: 100%; width: 80%; }
+#tableGrid {height: 100%; width: 80%; position: absolute }
 
 /* overrides for table styles */
 .ag-theme-alpine .ag-row { font-size: 16px; }
