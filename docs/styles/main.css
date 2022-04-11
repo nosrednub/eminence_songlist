@@ -15,8 +15,8 @@ body {overflow: hidden;}
 }
 .tableHeader input { 
   height: 100%;
+  width: 100%;
   padding: 10px;
-  width: 80%;
   outline: none;
   font-size: 18px;
   font-style: italic;
@@ -120,6 +120,8 @@ body {overflow: hidden;}
 @media (max-width: 700px) {
   
   .table { width: 100%; margin-left: 0; }
+  
+  .tableHeader input { width: 80%; }
   
   .menu-button-container {
     display: flex;
