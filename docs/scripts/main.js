@@ -5,6 +5,7 @@ var csvFilePath = "./data/Eminence-Sample-File-03312022.csv";
 var columnDefs = [
   { field: "Title", headerName: "Song Title" },
   { field: "Artist" }
+  { field: "Album" }
 ];
 
 // this is added to below after getting the data as well... make changes carefully
