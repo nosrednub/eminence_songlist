@@ -4,7 +4,7 @@ body {overflow: hidden;}
 .pageWrap { height: 100%; width: 100%; background: url(../images/background.jpg) no-repeat center center; background-size: cover; }
 
 /* table specific styles */
-.table { height: 100%; opacity: .8; }
+.table { height: 100%; width: 80%; margin-left: 10%; opacity: .8; }
 .tableWrapper { height: 100%; }
 
 .tableHeader { 
@@ -118,6 +118,9 @@ body {overflow: hidden;}
 }
 
 @media (max-width: 700px) {
+  
+  .table { width: 100%; margin-left: 0;
+  
   .menu-button-container {
     display: flex;
   }
