@@ -213,7 +213,7 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
 
 .ag-virtual-list-viewport {
   overflow: auto;
-  width: 100%;
+  width: 80%;
 }
 
 /**
@@ -262,14 +262,14 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
 }
 
 .ag-full-width-container {
-  width: 100%;
+  width: 80%;
 }
 
 .ag-floating-bottom-full-width-container, .ag-floating-top-full-width-container {
   display: inline-block;
   overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 .ag-virtual-list-container {
