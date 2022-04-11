@@ -58,7 +58,7 @@ function initializeTableData() {
           setTimeout(function() {
             // autosize columns to fit width of parent div
             sizeToFit(gridOptions);
-          }, 100);
+          }, 80);
       }
     });
  
