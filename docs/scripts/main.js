@@ -4,7 +4,8 @@ var csvFilePath = "./data/Eminence-Songlist.csv";
 // add column header info here if new column is added to the csv file.
 var columnDefs = [
   { field: "Title", headerName: "Song Title" },
-  { field: "Artist" }
+  { field: "Artist" },
+  { field: "Album" }
 ];
 
 // this is added to below after getting the data as well... make changes carefully
